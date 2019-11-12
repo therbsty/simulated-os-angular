@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simulated-os-angular';
+  title = 'Simulated Operating System';
+  testdata : String
+  constructor(private http: HttpClient) {}
+  testget() : void {
+  this.http.get<String>('http://localhost:8080/test/8')
+  .subscribe(data => {
+      this.testdata = data;
+      console.log(data);
+  }
+  );
+  }
 }
