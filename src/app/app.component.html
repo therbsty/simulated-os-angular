@@ -3,30 +3,83 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    button{
-      background-color: black;
-      border: aliceblue;
+    header {
+      background: black;
       color: white;
+      padding: 3%;
+    }
+    body {
+      background: gray(58, 58, 58);
+      color: black;
+      font-family: "Arial Black",serif;
+      margin: 0;
+      padding: 0;
+    }
+    .btn-group button {
+      background-color: ;
+      border: 1px solid aliceblue;
+      color: black;
       margin-bottom: 40px 80px 20px 100px;
-      width:100px;
-      border: 1px solid">
+      padding: 10px 24px;
+      float: left;
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-direction: row;
+      font-size: 24px;
+      text-align: center;
+      outline: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      position: absolute;
+      top: 50%;
+    /*margin: auto;
+      width: 600px;
+      height: 400px;
+      display: table-cell;
+      cursor: pointer;*/
+
+
+    active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    div {
+      display: inline-block;
+      margin: auto;
+      width: 100px;
+
+    }
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     * {
       box-sizing: border-box;
+    }
+    .divider{
+      width:5px;
+      height:auto;
+      display:inline-block;
     }
 
     .column {
       float: left;
       padding: 10px;
-      height: 300px;
+      height: 600px;
+      text-align: center
     }
 
     .left, .right {
-      width: 25%;
+      width: 30%;
     }
 
     .middle {
-      width: 50%;
+      width: 40%;
     }
 
     /* Clear floats after the columns */
@@ -35,24 +88,29 @@
       display: table;
       clear: both;
     }
+    footer {
+      background: black;
+      color: white;
+      padding: 3%;
+    }
   </style>
+  <title></title>
 </head>
 <body>
-<h2> Simulated Operating System</h2>
-<ul>
-  <from>
-    <button> Run </button>
-  </from>
+<header>
+  <h1> Simulated Operating System</h1>
+</header>
 
-  <from>
-    <button> Lode </button>
-  </from>
+<ul> <div class="wrapper">
 
-  <from>
-    <button> Clear </button>
-  </from>
+    <button style="width:10%" > Clear  </button>
+  <div class="divider"></div>
+    <button style="width:10%" > Lode </button>
+  <div class="divider"></div>
+    <button style="width:10%"> Run </button>
 
-</ul>
+
+</ul> </div>
 
 <div class="row">
   <div class="column left" style="background-color:#aaa;overflow:scroll;padding:5px;" >
@@ -67,7 +125,7 @@
     <h2>Memory Table</h2>
     <p></p>
   </div>
-</div>
+<footer> Tim Herbst, Shams Al-Farees, Arisha Jahan</footer>
 
 </body>
 </html>
