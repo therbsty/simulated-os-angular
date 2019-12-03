@@ -1,15 +1,19 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>   Simulated Operating System  </title>
+
+  <title>Simulated Operating System</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
+
     header {
       background: black;
       color: white;
       padding: 1%;
       border: 5px solid darkred;
     }
+
     body {
       background: gray(58, 58, 58);
       color: black;
@@ -18,6 +22,7 @@
       margin: 0;
       padding: 0;
     }
+
     .btn-group button {
       background-color: gray;
       border: 3px;
@@ -30,36 +35,26 @@
       text-align: center;
       display: flex;
       flex-direction: row;
-      font-size: 30px;
-      top: 50%;
-    /*margin: auto;
-      width: 600px;
-      height: 400px;
-      display: table-cell;
-      cursor: pointer;*/
 
-
-    active {
-      background-color: #3e8e41;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }
     div {
       display: inline-block;
       margin: auto;
       width: 100px;
-
     }
+
     ul {
       margin: 0;
       padding: 0;
     }
+
     }
+
     .wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     * {
       box-sizing: border-box;
     }
@@ -84,7 +79,6 @@
     .middle {
       width: 40%;
       border: 5px solid #060000;
-
     }
 
     /* Clear floats after the columns */
@@ -93,145 +87,147 @@
       display: table;
       clear: both;
     }
+
     footer {
       background: black;
       color: white;
       padding: 3%;
     }
+
   </style>
-  <title></title>
+
+
 </head>
-<body>
-<header>
-  <h1> Simulated Operating System</h1>
-</header>
+  <body>
+    <header>
+      <h1> Simulated Operating System</h1>
+    </header>
 
 <ul> <div class="wrapper">
-
-    <button style="width:12%" > Clear  </button>
+  <button style="width:12%" > Clear  </button>
   <div class="divider"></div>
-    <button style="width:12%" > Lode </button>
+  <button style="width:12%" > Lode </button>
   <div class="divider"></div>
-    <button style="width:12%"> Run </button>
-
-
+  <button style="width:12%"> Run </button>
 </div> </ul>
 
-<div class="row">
-  <div class="column left" style="background-color:#aaa;overflow:scroll;padding:5px;" >
-    <h2>Instruction Input</h2>
-    <p></p>
-  </div>
-  <div class="column middle" style="background-color:#bbb;">
-    <h2>OutPut Display </h2>
-    <p></p>
-  </div>
-  <div class="column right" style="background-color:#aaa;overflow:scroll;padding:5px;">
-    <h2>Memory Table</h2>
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    {{memorytable[0]}}
-    <p></p>
-  </div>
+
+<div class="column left" style="background-color:#aaa;overflow:scroll;padding:5px;" >
+  <h2>Instruction Input</h2>
+</div>
+
+<div class="column middle" style="background-color:#bbb;">
+  <h2>OutPut Display</h2>
+</div>
+<div class="column right" style="background-color:#aaa;overflow:scroll;padding:5px;">
+  <h2>Memory Table</h2>
+  <div #html></div>
+  {{memorytable[1]}}
+  {{memorytable[2]}}
+  {{memorytable[3]}}
+  {{memorytable[4]}}
+  {{memorytable[5]}}
+  {{memorytable[6]}}
+  {{memorytable[7]}}
+  {{memorytable[8]}}
+  {{memorytable[9]}}
+  {{memorytable[10]}}
+  {{memorytable[11]}}
+  {{memorytable[12]}}
+  {{memorytable[13]}}
+  {{memorytable[14]}}
+  {{memorytable[15]}}
+  {{memorytable[16]}}
+  {{memorytable[17]}}
+  {{memorytable[18]}}
+  {{memorytable[19]}}
+  {{memorytable[20]}}
+  {{memorytable[21]}}
+  {{memorytable[22]}}
+  {{memorytable[23]}}
+  {{memorytable[24]}}
+  {{memorytable[25]}}
+  {{memorytable[26]}}
+  {{memorytable[27]}}
+  {{memorytable[28]}}
+  {{memorytable[29]}}
+  {{memorytable[30]}}
+  {{memorytable[31]}}
+  {{memorytable[32]}}
+  {{memorytable[33]}}
+  {{memorytable[34]}}
+  {{memorytable[35]}}
+  {{memorytable[36]}}
+  {{memorytable[37]}}
+  {{memorytable[38]}}
+  {{memorytable[39]}}
+  {{memorytable[40]}}
+  {{memorytable[41]}}
+  {{memorytable[42]}}
+  {{memorytable[43]}}
+  {{memorytable[44]}}
+  {{memorytable[45]}}
+  {{memorytable[46]}}
+  {{memorytable[47]}}
+  {{memorytable[48]}}
+  {{memorytable[49]}}
+  {{memorytable[50]}}
+  {{memorytable[51]}}
+  {{memorytable[52]}}
+  {{memorytable[53]}}
+  {{memorytable[54]}}
+  {{memorytable[55]}}
+  {{memorytable[56]}}
+  {{memorytable[57]}}
+  {{memorytable[58]}}
+  {{memorytable[59]}}
+  {{memorytable[60]}}
+  {{memorytable[61]}}
+  {{memorytable[62]}}
+  {{memorytable[63]}}
+  {{memorytable[64]}}
+  {{memorytable[65]}}
+  {{memorytable[66]}}
+  {{memorytable[67]}}
+  {{memorytable[68]}}
+  {{memorytable[69]}}
+  {{memorytable[70]}}
+  {{memorytable[71]}}
+  {{memorytable[72]}}
+  {{memorytable[73]}}
+  {{memorytable[74]}}
+  {{memorytable[75]}}
+  {{memorytable[76]}}
+  {{memorytable[77]}}
+  {{memorytable[78]}}
+  {{memorytable[79]}}
+  {{memorytable[80]}}
+  {{memorytable[81]}}
+  {{memorytable[82]}}
+  {{memorytable[83]}}
+  {{memorytable[84]}}
+  {{memorytable[85]}}
+  {{memorytable[86]}}
+  {{memorytable[87]}}
+  {{memorytable[88]}}
+  {{memorytable[89]}}
+  {{memorytable[90]}}
+  {{memorytable[91]}}
+  {{memorytable[92]}}
+  {{memorytable[93]}}
+  {{memorytable[94]}}
+  {{memorytable[95]}}
+  {{memorytable[96]}}
+  {{memorytable[97]}}
+  {{memorytable[98]}}
+  {{memorytable[99]}}
+  {{memorytable[100]}}
+
+
+</div>
+
 <footer> Tim Herbst, Shams Al-Farees, Arisha Jahan </footer>
 
 </body>
 </html>
-  <title></title>
+
