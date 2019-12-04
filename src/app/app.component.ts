@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Simulated Operating System';
-  memorytable: string[] = ['a', 'b', 'c', 'd', '', '', '', '', '', '',
+  memorytable: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'T', 'o', '',
     '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '',
@@ -17,7 +17,7 @@ export class AppComponent {
     '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', ];
-
+/*memorytable[1]="bb";*/
 
 }
 
