@@ -9,33 +9,36 @@
   <style>
 
     header {
-      background: black;
-      color: white;
+      background: #3e64ff;
+      color: #ecfcff;
       padding: 1%;
-      border: 5px solid darkred;
+      border:5px #5edfff  ;
     }
 
     body {
-      background: gray(58, 58, 58);
-      color: black;
-      border: 10px solid darkred ;
+      background: #ecfcff;
+      color: #400780;
+      border: 10px solid  ;
       font-family: "Arial Black",serif;
       margin: 0;
       padding: 0;
     }
 
-    .btn-group button {
-      background-color: gray;
-      border: 3px;
-      color: black;
-      margin-bottom: 40px 80px 20px 100px;
-      padding: 100px 24px;
-      float: left;
-      cursor: pointer;
-      align-items: center;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
+    button {
+     background-color: white;
+       border: 2px solid #008CBA;
+       color: #400780;
+       padding: 16px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       -webkit-transition-duration: 0.4s;
+       transition-duration: 0.4s;
+      box-shadow:  0 9px #008CBA ;
+
+
 
     div {
       display: inline-block;
@@ -74,18 +77,18 @@
 
     .left, .right {
       width: 30%;
-      border: 10px solid #060000;
+      border: 10px solid #400780;
     }
 
     .middle {
       width: 40%;
-      border: 5px solid #060000;
+      border: 5px solid #400780;
     }
 
     footer {
-      background: black;
-      color: white;
-      padding: 3%;
+      background:#3e64ff  ;
+      color:#ecfcff;
+      padding: 1%;
     }
 
   </style>
@@ -101,154 +104,145 @@
   <div class="wrapper">
   <button style="width:12%" > Clear  </button>
   <div class="divider"></div>
-  <button style="width:12%" > Lode </button>
+  <button style="width:12%" > Load </button>
   <div class="divider"></div>
-  <button style="width:12%"> Run </button>
+  <button style="width:10%"> Run </button>
   </div>
 </ul>
 
 
-<div class="column left" style="background-color:#aaa;overflow:scroll;padding:5px;" >
+<div class="column left" style="background-color:#5edfff;overflow:scroll;padding:5px;" >
   <h2>Instruction Table</h2>
     <div class="column"  style= text-align:center>
-     <div>Input#0:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[0]}}</div>
-     <div>Input#1:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[1]}}</div>
-     <div>Input#2:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[2]}}</div>
-     <div>Input#3:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[3]}}</div>
-     <div>Input#4:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[4]}}</div>
-     <div>Input#5:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[5]}}</div>
-     <div>Input#6:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[6]}}</div>
-     <div>Input#7:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[7]}}</div>
-     <div>Input#8:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[8]}}</div>
-     <div>Input#9:  <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[9]}}</div>
-     <div>Input#10: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[10]}}</div>
-     <div>Input#11: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[11]}}</div>
-     <div>Input#12: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[12]}}</div>
-     <div>Input#13: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[13]}}</div>
-     <div>Input#14: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[14]}}</div>
-     <div>Input#15: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[14]}}</div>
-     <div>Input#16: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[15]}}</div>
-     <div>Input#17: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[16]}}</div>
-     <div>Input#18: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[17]}}</div>
-     <div>Input#19: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[18]}}</div>
-     <div>Input#20: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[19]}}</div>
-     <div>Input#21: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[20]}}</div>
-     <div>Input#22: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[21]}}</div>
-     <div>Input#23: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[22]}}</div>
-     <div>Input#24: <input type="text" instruction="Enter Job Number" ><br> {{instructiontable[23]}}</div>
+     <div>Input&nbsp;#0:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[0]}}</div>
+     <div>Input&nbsp;#1:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[1]}}</div>
+     <div>Input&nbsp;#2:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[2]}}</div>
+     <div>Input&nbsp;#3:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[3]}}</div>
+     <div>Input&nbsp;#4:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[4]}}</div>
+     <div>Input&nbsp;#5:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[5]}}</div>
+     <div>Input&nbsp;#6:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[6]}}</div>
+     <div>Input&nbsp;#7:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[7]}}</div>
+     <div>Input&nbsp;#8:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[8]}}</div>
+     <div>Input&nbsp;#9:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[9]}}</div>
+     <div>Input#10:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[10]}}</div>
+     <div>Input#11:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[11]}}</div>
+     <div>Input#12:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[12]}}</div>
+     <div>Input#13:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[13]}}</div>
+     <div>Input#14:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[14]}}</div>
+     <div>Input#15:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[14]}}</div>
+     <div>Input#16:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[15]}}</div>
+     <div>Input#17:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[16]}}</div>
+     <div>Input#18:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[17]}}</div>
+     <div>Input#19:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[18]}}</div>
+     <div>Input#20:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[19]}}</div>
+     <div>Input#21:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[20]}}</div>
+     <div>Input#22:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[21]}}</div>
+     <div>Input#23:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[22]}}</div>
+     <div>Input#24:&nbsp;<input type="text" instruction="Enter Job Number"><br> {{instructiontable[23]}}</div>
      </div>
 </div>
 
-<div class="column middle" style="background-color:#bbb;">
+<div class="column middle" style="background-color:#b2fcff;">
+
   <h2>OutPut Display</h2>
   <div class="column"  style= text-align:center>
-    <div>Shams{{outputdisplay}}</div>
+    <div>{{outputdisplay}}</div>
    </div>
 </div>
 
-<div class="column right" style="background-color:#aaa;overflow:scroll;padding:5px; ">
+<div class="column right" style="background-color:#5edfff;overflow:scroll;padding:5px; ">
   <h2>Memory Table</h2>
     <div class="column"  style= text-align:center>
-      <div>Address#0:  {{memorytable[0]}}</div>
-      <div>Address#1:  {{memorytable[1]}}</div>
-      <div>Address#2:  {{memorytable[2]}}</div>
-      <div>Address#3:  {{memorytable[3]}}</div>
-      <div>Address#4:  {{memorytable[4]}}</div>
-      <div>Address#5:  {{memorytable[5]}}</div>
-      <div>Address#6:  {{memorytable[6]}}</div>
-      <div>Address#7:  {{memorytable[7]}}</div>
-      <div>Address#8:  {{memorytable[8]}}</div>
-      <div>Address#9:  {{memorytable[9]}}</div>
-      <div>Address#10: {{memorytable[10]}}</div>
-      <div>Address#11: {{memorytable[11]}}</div>
-      <div>Address#12  {{memorytable[12]}}</div>
-      <div>Address#13: {{memorytable[13]}}</div>
-      <div>Address#14: {{memorytable[14]}}</div>
-      <div>Address#15: {{memorytable[15]}}</div>
-      <div>Address#16: {{memorytable[16]}}</div>
-      <div>Address#17: {{memorytable[17]}}</div>
-      <div>Address#18: {{memorytable[18]}}</div>
-      <div>Address#19: {{memorytable[19]}}</div>
-      <div>Address#20: {{memorytable[20]}}</div>
-      <div>Address#21: {{memorytable[21]}}</div>
-      <div>Address#22: {{memorytable[22]}}</div>
-      <div>Address#23: {{memorytable[23]}}</div>
-      <div>Address#24: {{memorytable[24]}}</div>
-      <div>Address#25: {{memorytable[25]}}</div>
-      <div>Address#26: {{memorytable[26]}}</div>
-      <div>Address#27: {{memorytable[27]}}</div>
-      <div>Address#28: {{memorytable[28]}}</div>
-      <div>Address#29: {{memorytable[29]}}</div>
-      <div>Address#30: {{memorytable[30]}}</div>
-      <div>Address#31: {{memorytable[31]}}</div>
-      <div>Address#32: {{memorytable[32]}}</div>
-      <div>Address#33: {{memorytable[33]}}</div>
-      <div>Address#34: {{memorytable[34]}}</div>
-      <div>Address#35: {{memorytable[35]}}</div>
-      <div>Address#36: {{memorytable[36]}}</div>
-      <div>Address#37: {{memorytable[37]}}</div>
-      <div>Address#38: {{memorytable[38]}}</div>
-      <div>Address#39: {{memorytable[39]}}</div>
-      <div>Address#40: {{memorytable[40]}}</div>
-      <div>Address#41: {{memorytable[41]}}</div>
-      <div>Address#42: {{memorytable[42]}}</div>
-      <div>Address#43: {{memorytable[43]}}</div>
-      <div>Address#44: {{memorytable[44]}}</div>
-      <div>Address#45: {{memorytable[45]}}</div>
-      <div>Address#46: {{memorytable[46]}}</div>
-      <div>Address#47: {{memorytable[47]}}</div>
-      <div>Address#48: {{memorytable[48]}}</div>
-      <div>Address#49: {{memorytable[49]}}</div>
-      <div>Address#50: {{memorytable[50]}}</div>
-      <div>Address#51: {{memorytable[51]}}</div>
-      <div>Address#52: {{memorytable[52]}}</div>
-      <div>Address#53: {{memorytable[53]}}</div>
-      <div>Address#54: {{memorytable[54]}}</div>
-      <div>Address#55: {{memorytable[55]}}</div>
-      <div>Address#56: {{memorytable[56]}}</div>
-      <div>Address#57: {{memorytable[57]}}</div>
-      <div>Address#58: {{memorytable[58]}}</div>
-      <div>Address#59: {{memorytable[59]}}</div>
-      <div>Address#60: {{memorytable[60]}}</div>
-      <div>Address#61  {{memorytable[61]}}</div>
-      <div>Address#62: {{memorytable[62]}}</div>
-      <div>Address#63: {{memorytable[63]}}</div>
-      <div>Address#64: {{memorytable[64]}}</div>
-      <div>Address#65: {{memorytable[65]}}</div>
-      <div>Address#66: {{memorytable[66]}}</div>
-      <div>Address#67: {{memorytable[67]}}</div>
-      <div>Address#68: {{memorytable[68]}}</div>
-      <div>Address#69: {{memorytable[69]}}</div>
-      <div>Address#70: {{memorytable[70]}}</div>
-      <div>Address#71: {{memorytable[71]}}</div>
-      <div>Address#72: {{memorytable[72]}}</div>
-      <div>Address#73: {{memorytable[73]}}</div>
-      <div>Address#74: {{memorytable[74]}}</div>
-      <div>Address#75: {{memorytable[75]}}</div>
-      <div>Address#76: {{memorytable[76]}}</div>
-      <div>Address#77: {{memorytable[77]}}</div>
-      <div>Address#78: {{memorytable[78]}}</div>
-      <div>Address#79: {{memorytable[79]}}</div>
-      <div>Address#80: {{memorytable[80]}}</div>
-      <div>Address#81: {{memorytable[81]}}</div>
-      <div>Address#82: {{memorytable[82]}}</div>
-      <div>Address#83: {{memorytable[83]}}</div>
-      <div>Address#84: {{memorytable[84]}}</div>
-      <div>Address#85: {{memorytable[85]}}</div>
-      <div>Address#86: {{memorytable[86]}}</div>
-      <div>Address#87: {{memorytable[87]}}</div>
-      <div>Address#88: {{memorytable[88]}}</div>
-      <div>Address#89: {{memorytable[89]}}</div>
-      <div>Address#90: {{memorytable[90]}}</div>
-      <div>Address#91: {{memorytable[91]}}</div>
-      <div>Address#92: {{memorytable[92]}}</div>
-      <div>Address#93: {{memorytable[93]}}</div>
-      <div>Address#94: {{memorytable[94]}}</div>
-      <div>Address#95: {{memorytable[95]}}</div>
-      <div>Address#96: {{memorytable[96]}}</div>
-      <div>Address#97: {{memorytable[97]}}</div>
-      <div>Address#98: {{memorytable[98]}}</div>
-      <div>Address#99: {{memorytable[99]}}</div>
+      <div>Address&nbsp;#10:&nbsp; {{memorytable[10]}}</div>
+      <div>Address&nbsp;#11:&nbsp; {{memorytable[11]}}</div>
+      <div>Address&nbsp;#12:&nbsp; {{memorytable[12]}}</div>
+      <div>Address&nbsp;#13:&nbsp; {{memorytable[13]}}</div>
+      <div>Address&nbsp;#14:&nbsp; {{memorytable[14]}}</div>
+      <div>Address&nbsp;#15:&nbsp; {{memorytable[15]}}</div>
+      <div>Address&nbsp;#16:&nbsp; {{memorytable[16]}}</div>
+      <div>Address&nbsp;#17:&nbsp; {{memorytable[17]}}</div>
+      <div>Address&nbsp;#18:&nbsp; {{memorytable[18]}}</div>
+      <div>Address&nbsp;#19:&nbsp; {{memorytable[19]}}</div>
+      <div>Address&nbsp;#20:&nbsp; {{memorytable[20]}}</div>
+      <div>Address&nbsp;#21:&nbsp; {{memorytable[21]}}</div>
+      <div>Address&nbsp;#22:&nbsp; {{memorytable[22]}}</div>
+      <div>Address&nbsp;#23:&nbsp; {{memorytable[23]}}</div>
+      <div>Address&nbsp;#24:&nbsp; {{memorytable[24]}}</div>
+      <div>Address&nbsp;#25:&nbsp; {{memorytable[25]}}</div>
+      <div>Address&nbsp;#26:&nbsp; {{memorytable[26]}}</div>
+      <div>Address&nbsp;#27:&nbsp; {{memorytable[27]}}</div>
+      <div>Address&nbsp;#28:&nbsp; {{memorytable[28]}}</div>
+      <div>Address&nbsp;#29:&nbsp; {{memorytable[29]}}</div>
+      <div>Address&nbsp;#30:&nbsp; {{memorytable[30]}}</div>
+      <div>Address&nbsp;#31:&nbsp; {{memorytable[31]}}</div>
+      <div>Address&nbsp;#32:&nbsp; {{memorytable[32]}}</div>
+      <div>Address&nbsp;#33:&nbsp; {{memorytable[33]}}</div>
+      <div>Address&nbsp;#34:&nbsp; {{memorytable[34]}}</div>
+      <div>Address&nbsp;#35:&nbsp; {{memorytable[35]}}</div>
+      <div>Address&nbsp;#36:&nbsp; {{memorytable[36]}}</div>
+      <div>Address&nbsp;#37:&nbsp; {{memorytable[37]}}</div>
+      <div>Address&nbsp;#38:&nbsp; {{memorytable[38]}}</div>
+      <div>Address&nbsp;#39:&nbsp; {{memorytable[39]}}</div>
+      <div>Address&nbsp;#40:&nbsp; {{memorytable[40]}}</div>
+      <div>Address&nbsp;#41:&nbsp; {{memorytable[41]}}</div>
+      <div>Address&nbsp;#42:&nbsp; {{memorytable[42]}}</div>
+      <div>Address&nbsp;#43:&nbsp; {{memorytable[43]}}</div>
+      <div>Address&nbsp;#44:&nbsp; {{memorytable[44]}}</div>
+      <div>Address&nbsp;#45:&nbsp; {{memorytable[45]}}</div>
+      <div>Address&nbsp;#46:&nbsp; {{memorytable[46]}}</div>
+      <div>Address&nbsp;#47:&nbsp; {{memorytable[47]}}</div>
+      <div>Address&nbsp;#48:&nbsp; {{memorytable[48]}}</div>
+      <div>Address&nbsp;#49:&nbsp; {{memorytable[49]}}</div>
+      <div>Address&nbsp;#50:&nbsp; {{memorytable[50]}}</div>
+      <div>Address&nbsp;#51:&nbsp; {{memorytable[51]}}</div>
+      <div>Address&nbsp;#52:&nbsp; {{memorytable[52]}}</div>
+      <div>Address&nbsp;#53:&nbsp; {{memorytable[53]}}</div>
+      <div>Address&nbsp;#54:&nbsp; {{memorytable[54]}}</div>
+      <div>Address&nbsp;#55:&nbsp; {{memorytable[55]}}</div>
+      <div>Address&nbsp;#56:&nbsp; {{memorytable[56]}}</div>
+      <div>Address&nbsp;#57:&nbsp; {{memorytable[57]}}</div>
+      <div>Address&nbsp;#58:&nbsp; {{memorytable[58]}}</div>
+      <div>Address&nbsp;#59:&nbsp; {{memorytable[59]}}</div>
+      <div>Address&nbsp;#60:&nbsp; {{memorytable[60]}}</div>
+      <div>Address&nbsp;#61:&nbsp; {{memorytable[61]}}</div>
+      <div>Address&nbsp;#62:&nbsp; {{memorytable[62]}}</div>
+      <div>Address&nbsp;#63:&nbsp; {{memorytable[63]}}</div>
+      <div>Address&nbsp;#64:&nbsp; {{memorytable[64]}}</div>
+      <div>Address&nbsp;#65:&nbsp; {{memorytable[65]}}</div>
+      <div>Address&nbsp;#66:&nbsp; {{memorytable[66]}}</div>
+      <div>Address&nbsp;#67:&nbsp; {{memorytable[67]}}</div>
+      <div>Address&nbsp;#68:&nbsp; {{memorytable[68]}}</div>
+      <div>Address&nbsp;#69:&nbsp; {{memorytable[69]}}</div>
+      <div>Address&nbsp;#70:&nbsp; {{memorytable[70]}}</div>
+      <div>Address&nbsp;#71:&nbsp; {{memorytable[71]}}</div>
+      <div>Address&nbsp;#72:&nbsp; {{memorytable[72]}}</div>
+      <div>Address&nbsp;#73:&nbsp; {{memorytable[73]}}</div>
+      <div>Address&nbsp;#74:&nbsp; {{memorytable[74]}}</div>
+      <div>Address&nbsp;#75:&nbsp; {{memorytable[75]}}</div>
+      <div>Address&nbsp;#76:&nbsp; {{memorytable[76]}}</div>
+      <div>Address&nbsp;#77:&nbsp; {{memorytable[77]}}</div>
+      <div>Address&nbsp;#78:&nbsp; {{memorytable[78]}}</div>
+      <div>Address&nbsp;#79:&nbsp; {{memorytable[79]}}</div>
+      <div>Address&nbsp;#80:&nbsp; {{memorytable[80]}}</div>
+      <div>Address&nbsp;#81:&nbsp; {{memorytable[81]}}</div>
+      <div>Address&nbsp;#82:&nbsp; {{memorytable[82]}}</div>
+      <div>Address&nbsp;#83:&nbsp; {{memorytable[83]}}</div>
+      <div>Address&nbsp;#84:&nbsp; {{memorytable[84]}}</div>
+      <div>Address&nbsp;#85:&nbsp; {{memorytable[85]}}</div>
+      <div>Address&nbsp;#86:&nbsp; {{memorytable[86]}}</div>
+      <div>Address&nbsp;#87:&nbsp; {{memorytable[87]}}</div>
+      <div>Address&nbsp;#88:&nbsp; {{memorytable[88]}}</div>
+      <div>Address&nbsp;#89:&nbsp; {{memorytable[89]}}</div>
+      <div>Address&nbsp;#90:&nbsp; {{memorytable[90]}}</div>
+      <div>Address&nbsp;#91:&nbsp; {{memorytable[91]}}</div>
+      <div>Address&nbsp;#92:&nbsp; {{memorytable[92]}}</div>
+      <div>Address&nbsp;#93:&nbsp; {{memorytable[93]}}</div>
+      <div>Address&nbsp;#94:&nbsp; {{memorytable[94]}}</div>
+      <div>Address&nbsp;#95:&nbsp; {{memorytable[95]}}</div>
+      <div>Address&nbsp;#96:&nbsp; {{memorytable[96]}}</div>
+      <div>Address&nbsp;#97:&nbsp; {{memorytable[97]}}</div>
+      <div>Address&nbsp;#98:&nbsp; {{memorytable[98]}}</div>
+      <div>Address&nbsp;#99:&nbsp; {{memorytable[99]}}</div>
  </div>
 </div>
 
