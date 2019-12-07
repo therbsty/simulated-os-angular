@@ -114,6 +114,10 @@
 <div class="column left" style="background-color:#5edfff;overflow:scroll;padding:5px;" >
   <h2>Instruction Table</h2>
     <div class="column"  style= text-align:center>
+      <div>Input&nbsp;#0:&nbsp;<input #input0 (keyup)="addInput(input0.value,0)"/></div>
+      <div>Input&nbsp;#1:&nbsp;<input #input1 (keyup)="addInput(input1.value,1)"/></div>
+
+
      <div>Input&nbsp;#0:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[0]}}</div>
      <div>Input&nbsp;#1:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[1]}}</div>
      <div>Input&nbsp;#2:&nbsp; <input type="text" instruction="Enter Job Number"><br> {{instructiontable[2]}}</div>
@@ -256,7 +260,7 @@
  </div>
 </div>
 
-  <footer> Tim Herbst, Shams Al-Farees, Arisha Jahan </footer>
+  <footer> Tim Herbst, Shams Al-Farees, Arisha Jahan {{instructiontable[0]}}</footer>
 
 </body>
 </html>

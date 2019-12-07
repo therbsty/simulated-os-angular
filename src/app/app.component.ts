@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'Simulated Operating System';
@@ -19,9 +19,12 @@ export class AppComponent {
     '', '', '', '', '', '', '', '', '', ];
 /*memorytable[1]="bb";*/
   instructiontable: string[] = ['', '', '', '', '', '', '', '', ``, '',
-    '', '', '', '', '', '', '', '', '', 
-    '', '', '', '', ``, ];
+    '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '', ];
   outputdisplay: string;
+  addInput(instruction : string, index : number) {
+    this.instructiontable[index] = instruction;
+  }
 }
 
 
