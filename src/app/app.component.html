@@ -102,11 +102,11 @@
 
 <ul>
   <div class="wrapper">
-  <button style="width:12%" > Clear  </button>
+    <button style="width:10%" (click)="clear()">Clear</button>
+    <div class="divider"></div>
+    <button style="width:10%" (click)="load()">Load</button>
   <div class="divider"></div>
-  <button style="width:12%" > Load </button>
-  <div class="divider"></div>
-  <button style="width:10%"> Run </button>
+  <button style="width:10%" (click)="run()">Run</button>
   </div>
 </ul>
 

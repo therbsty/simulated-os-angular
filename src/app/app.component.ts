@@ -22,7 +22,22 @@ export class AppComponent {
   instructiontable: string[] = ['', '', '', '', '', '', '', '', ``, '',
     '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', ];
-  outputdisplay: string;
+  outputdisplay: string = 'test output';
+  clear() {
+    this.outputdisplay = 'Clear Was Clicked';
+    this.instructiontable = ['', '', '', '', '', '', '', '', ``, '',
+      '', '', '', '', '', '', '', '', '',
+      '', '', '', '', '', ];
+    this.memorytable[0] = 'clear';
+  }
+  load() {
+    this.outputdisplay = 'Load Was Clicked';
+    this.memorytable[0] = 'load';
+  }
+  run() {
+    this.outputdisplay = 'Run Was Clicked';
+    this.memorytable[0] = 'run';
+  }
   addInput(instruction: string, index: number) {
     this.instructiontable[index] = instruction;
   }
