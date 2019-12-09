@@ -23,13 +23,11 @@ export class AppComponent {
   instructiontable: string[] = ['!', '!', '!', '!', '!', '!', '!', '!', '!', '!',
     '!', '!', '!', '!', '!', '!', '!', '!', '!',
     '!', '!', '!', '!', '!', ];
-  outputdisplay: String = 'test output';
+  outputdisplay: string = '';
   clear() {
-    this.outputdisplay = 'Clear Was Clicked';
     this.instructiontable = ['!', '!', '!', '!', '!', '!', '!', '!', '!', '!',
       '!', '!', '!', '!', '!', '!', '!', '!', '!',
       '!', '!', '!', '!', '!', ];
-    this.memorytable[0] = 'clear';
   }
   load() {
     this.http.post<string>('  http://localhost:8080/memorymanager/newjob',
@@ -46,21 +44,19 @@ export class AppComponent {
         console.log(data);
       }
     );
-    this.getMemoryTable();
-    this.getOutPutMemory();
   }
   run() {
-    this.http.get<string>('  http://localhost:8080/processmanager/run')
-      .subscribe(data => {}
+    this.http.put<string>(' http://localhost:8080/processmanager/run', {responseType: 'text' as 'json'})
+      .subscribe(data => {
+        console.log(data);
+      }
       );
-    this.getMemoryTable();
-    this.getOutPutProcessor();
   }
   addInput(instruction: string, index: number) {
     this.instructiontable[index] = instruction;
   }
   getOutPutMemory(){
-    this.http.get<String>(' http://localhost:8080/memorymanager/getoutput')
+    this.http.get<string>(' http://localhost:8080/memorymanager/getoutput', {responseType: 'text' as 'json'})
       .subscribe(data => {
           this.outputdisplay = data;
           console.log(data);
@@ -68,7 +64,7 @@ export class AppComponent {
       );
   }
   getOutPutProcessor(){
-    this.http.get<String>('  http://localhost:8080/processmanager/getoutput')
+    this.http.get<string>('  http://localhost:8080/processmanager/getoutput', {responseType: 'text' as 'json'})
       .subscribe(data => {
           this.outputdisplay = data;
           console.log(data);
@@ -83,6 +79,10 @@ export class AppComponent {
         }
         }
       );
+  }
+  upDate(){
+    this.getMemoryTable();
+    this.getOutPutMemory();
   }
 }
 
