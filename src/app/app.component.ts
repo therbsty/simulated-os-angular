@@ -32,7 +32,7 @@ export class AppComponent {
     this.memorytable[0] = 'clear';
   }
   load() {
-    this.http.post<Object>('  http://localhost:8080/memorymanager/newjob',
+    this.http.post<string>('  http://localhost:8080/memorymanager/newjob',
       {
         "instructions" : [
           this.instructiontable[0], this.instructiontable[1], this.instructiontable[2], this.instructiontable[3], this.instructiontable[4]
@@ -41,9 +41,7 @@ export class AppComponent {
           , this.instructiontable[15], this.instructiontable[16], this.instructiontable[17], this.instructiontable[18], this.instructiontable[19]
           , this.instructiontable[20], this.instructiontable[21], this.instructiontable[22], this.instructiontable[23], this.instructiontable[24]
         ]
-      })
-      .subscribe(data => {}
-      );
+      });
     this.getMemoryTable();
     this.getOutPutMemory();
   }
@@ -76,8 +74,9 @@ export class AppComponent {
   getMemoryTable(){
     this.http.get<string[]>('   http://localhost:8080/memorymanager/getmemorytable')
       .subscribe(data => {
-          this.memorytable = data;
-          console.log(data);
+        for (let i = 0; i < 100; i++) {
+          this.memorytable[i] = data[i];
+        }
         }
       );
   }
